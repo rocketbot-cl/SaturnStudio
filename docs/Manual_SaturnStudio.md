@@ -8,7 +8,7 @@ This module allows you to connect to your Saturn Studio account and manage your 
 
 *Read this in other languages: [English](Manual_SaturnStudio.md), [Português](Manual_SaturnStudio.pr.md), [Español](Manual_SaturnStudio.es.md)*
   
-![banner](imgs/Banner_SaturnStudio.png o jpg)
+![banner](imgs/Banner_SaturnStudio.jpg)
 ## How to install this module
   
 To install the module in Rocketbot Studio, it can be done in two ways:
