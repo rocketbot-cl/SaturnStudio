@@ -180,6 +180,7 @@
                             "en": "Variable name without {}",
                             "pr": "Nome da variável sem {}"
                         },
+                        "remove_vars": true,
                         "id": "result",
                         "css": "col-md-6"
                     }
