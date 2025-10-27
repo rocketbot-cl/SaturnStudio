@@ -1,9 +1,14 @@
+
+
+
+
 # Saturn Studio
   
 This module allows you to connect to your Saturn Studio account and manage your workflows.  
 
-*Read this in other languages: [English](README.md), [Português](README.pr.md), [Español](README.es.md)*
-
+*Read this in other languages: [English](Manual_SaturnStudio.md), [Português](Manual_SaturnStudio.pr.md), [Español](Manual_SaturnStudio.es.md)*
+  
+![banner](imgs/Banner_SaturnStudio.jpg)
 ## How to install this module
   
 To install the module in Rocketbot Studio, it can be done in two ways:
@@ -11,29 +16,20 @@ To install the module in Rocketbot Studio, it can be done in two ways:
 2. Automatic: When entering Rocketbot Studio on the right margin you will find the **Addons** section, select **Install Mods**, search for the desired module and press install.  
 
 
-## Overview
+## Description of the commands
 
-
-1. Connect  
-Connect your account of Saturn Studio using your API Key.
-
-2. Execute workflow  
-Execute a workflow from your Saturn Studio account.  
-
-
-
-
-----
-### OS
-
-- windows
-- mac
-- linux
-- docker
-
-### Dependencies
-
-### License
+### Connect
   
-![MIT](https://img.shields.io/github/license/instaloader/instaloader.svg)  
-[MIT](https://opensource.org/license/mit)
+Connect your account of Saturn Studio using your API Key.
+|Parameters|Description|example|
+| --- | --- | --- |
+|API Key|API Key for Saturn Studio|eyJhbGciOi...|
+|Assign result to variable|Variable where the result of the connection will be stored|Variable|
+
+### Execute workflow
+  
+Execute a workflow from your Saturn Studio account.
+|Parameters|Description|example|
+| --- | --- | --- |
+|Workflow URL|Workflow URL for Saturn Studio|https://studio.rocketbot.com/flow?d=xxxx&i=yyyy&r=e|
+|Assign result to variable|Variable where the result of the connection will be stored|Variable|
