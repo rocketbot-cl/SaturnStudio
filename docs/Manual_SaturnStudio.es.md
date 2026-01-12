@@ -1,3 +1,7 @@
+
+
+
+
 # Saturn Studio
   
 Este módulo te permite conectarte a tu cuenta de Saturn Studio y gestionar tus flujos de trabajo.  
@@ -29,3 +33,41 @@ Ejecutar un workflow desde tu cuenta de Saturn Studio.
 | --- | --- | --- |
 |Workflow URL|URL del flujo de trabajo en Saturn Studio|https://studio.rocketbot.com/flow?d=xxxx&i=yyyy&r=e|
 |Asignar resultado a variable|Variable donde se almacenará el resultado de la conexión|Variable|
+
+### Subir archivo al File Storage
+  
+Sube un archivo al File Storage de tu cuenta de Saturn Studio.
+|Parámetros|Descripción|ejemplo|
+| --- | --- | --- |
+|Path hacia el archivo|Ruta del archivo a subir|C:/Users/User/Downloads/file.file|
+|Asignar resultado a variable|Nombre de la variable donde se almacenará el resultado|Variable|
+
+### Listar todos los archivos en el File Storage
+  
+Retorna una lista con todos los archivos en el File Storage de tu cuenta de Saturn Studio.
+|Parámetros|Descripción|ejemplo|
+| --- | --- | --- |
+|Asignar resultado a variable|Retorna una lista con todos los archivos en el File Storage de tu cuenta de Saturn Studio|Variable|
+
+### Eliminar un archivo del File Storage
+  
+Elimina un archivo del File Storage de tu cuenta de Saturn Studio.
+|Parámetros|Descripción|ejemplo|
+| --- | --- | --- |
+|ID del archivo|ID del archivo a eliminar en el File Storage de tu cuenta de Saturn Studio|Archivo|
+|Asignar resultado a variable|Nombre de la variable donde se almacenará el resultado|Variable|
+
+### Listar todos los robots en Saturn Studio
+  
+Retorna una lista con todos los robots de tu cuenta de Saturn Studio.
+|Parámetros|Descripción|ejemplo|
+| --- | --- | --- |
+|Asignar resultado a variable|Retorna una lista con todos los robots de tu cuenta de Saturn Studio|Variable|
+|Filtrar robots activos|Marca para solo listar los robots activos|True|
+
+### Detener todos los robots en ejecución
+  
+Detiene todos los robots en ejecución en tu cuenta de Saturn Studio.
+|Parámetros|Descripción|ejemplo|
+| --- | --- | --- |
+|Asignar resultado a variable|Variable donde se almacenará el resultado de si se pudieron desactivar los robots|Variable|

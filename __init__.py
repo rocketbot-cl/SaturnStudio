@@ -74,6 +74,62 @@ try:
             SetVar(result, False)
             raise Exception("Error executing flow in Saturn: " + str(e))
 
+
+    if module == "upload_file":
+        file = GetParams("file")
+        result = GetParams("result")
+
+        try:
+            SetVar(result, mod_SaturnClient.upload_file(file, robot_id="0", db="0")) #robot_id y db tienen que ser 0
+        except Exception as e:
+            SetVar(result, False)
+            raise Exception("Error uploading file to Saturn: " + str(e))
+
+
+    if module == "list_files":
+        result = GetParams("result")
+
+        try:
+            SetVar(result, mod_SaturnClient.list_files())
+        except Exception as e:
+            raise Exception("Error listing files in Saturn: " + str(e))
+        
+
+    if module == "delete_file":
+        file_id = GetParams("file_id")
+        result = GetParams("result")
+
+        try:
+            SetVar(result, mod_SaturnClient.delete_file(file_id))
+        except Exception as e:
+            SetVar(result, False)
+            raise Exception("Error deleting file in Saturn: " + str(e))
+        
+
+    if module == "list_robots":
+        result = GetParams("result")
+        actives = GetParams("actives")
+
+        if actives is not None:
+            actives = eval(actives)
+
+        try:
+            SetVar(result, mod_SaturnClient.list_robots(actives))
+        except Exception as e:
+            raise Exception("Error listing robots in Saturn: " + str(e))
+        
+        
+    if module == "stop_all_robots":
+        result = GetParams("result")
+
+        try:
+            SetVar(result, mod_SaturnClient.stop_all_robots())
+        except Exception as e:
+            SetVar(result, False)
+            raise Exception("Error listing robots in Saturn: " + str(e))
+
+
+        
 except Exception as e:
     PrintException() # type: ignore
     raise e

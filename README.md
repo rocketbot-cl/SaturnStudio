@@ -1,3 +1,7 @@
+
+
+
+
 # Saturn Studio
   
 This module allows you to connect to your Saturn Studio account and manage your workflows.  
@@ -18,7 +22,22 @@ To install the module in Rocketbot Studio, it can be done in two ways:
 Connect your account of Saturn Studio using your API Key.
 
 2. Execute workflow  
-Execute a workflow from your Saturn Studio account.  
+Execute a workflow from your Saturn Studio account.
+
+3. Upload file to File Storage  
+Upload a file to the File Storage of your Saturn Studio account.
+
+4. List all files in File Storage  
+Return a list of all files from the File Storage of your Saturn Studio account.
+
+5. Delete a file from File Storage  
+Delete a file from the File Storage of your Saturn Studio account.
+
+6. List all robots in Saturn Studio  
+Return a list of all robots of your Saturn Studio account.
+
+7. Stop all running robots  
+Stops all running robots in your Saturn Studio account.  
 
 
 

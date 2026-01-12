@@ -33,3 +33,41 @@ Execute a workflow from your Saturn Studio account.
 | --- | --- | --- |
 |Workflow URL|Workflow URL for Saturn Studio|https://studio.rocketbot.com/flow?d=xxxx&i=yyyy&r=e|
 |Assign result to variable|Variable where the result of the connection will be stored|Variable|
+
+### Upload file to File Storage
+  
+Upload a file to the File Storage of your Saturn Studio account.
+|Parameters|Description|example|
+| --- | --- | --- |
+|File Path|Path of the file to upload|C:/Users/User/Downloads/file.file|
+|Assign result to variable|Name of the variable where the result will be stored|Variable|
+
+### List all files in File Storage
+  
+Return a list of all files from the File Storage of your Saturn Studio account.
+|Parameters|Description|example|
+| --- | --- | --- |
+|Assign result to variable|Return a list of all files from the File Storage of your Saturn Studio account|Variable|
+
+### Delete a file from File Storage
+  
+Delete a file from the File Storage of your Saturn Studio account.
+|Parameters|Description|example|
+| --- | --- | --- |
+|File ID|ID of the file to delete from the File Storage of your Saturn Studio account|File|
+|Assign result to variable|Name of the variable where the result will be stored|Variable|
+
+### List all robots in Saturn Studio
+  
+Return a list of all robots of your Saturn Studio account.
+|Parameters|Description|example|
+| --- | --- | --- |
+|Assign result to variable|Return a list of all robots of your Saturn Studio account|Variable|
+|Filter active robots|Check to list only active robots|True|
+
+### Stop all running robots
+  
+Stops all running robots in your Saturn Studio account.
+|Parameters|Description|example|
+| --- | --- | --- |
+|Assign result to variable|Variable where the result of whether the robots could be deactivated will be stored|Variable|
