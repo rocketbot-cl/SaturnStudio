@@ -384,11 +384,6 @@
                             "en": "ID of the file to delete from the File Storage of your Saturn Studio account",
                             "pr": "ID do arquivo a ser excluído no File Storage da sua conta do Saturn Studio"
                         },
-                        "help": {
-                            "es": "Nombre de variable sin {}",
-                            "en": "Variable name without {}",
-                            "pr": "Nome da variável sem {}"
-                        },
                         "remove_vars": false,
                         "id": "file_id",
                         "css": "col-md-6"
