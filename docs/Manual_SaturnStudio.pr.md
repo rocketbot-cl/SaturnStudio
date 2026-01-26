@@ -33,3 +33,41 @@ Executar um fluxo de trabalho na sua conta do Saturn Studio.
 | --- | --- | --- |
 |Workflow URL|Workflow URL para Saturn Studio|https://studio.rocketbot.com/flow?d=xxxx&i=yyyy&r=e|
 |Atribuir resultado a variável|Variável onde o resultado da conexão será armazenado|Variável|
+
+### Carregar arquivo para o File Storage
+  
+Carregue um arquivo para o File Storage da sua conta do Saturn Studio.
+|Parâmetros|Descrição|exemplo|
+| --- | --- | --- |
+|Caminho do Arquivo|Caminho do arquivo a ser carregado|C:/Users/User/Downloads/file.file|
+|Atribuir resultado a variável|Nome da variável onde o resultado será armazenado|Variável|
+
+### Listar todos os arquivos no File Storage
+  
+Retorna uma lista com todos os arquivos no File Storage da sua conta do Saturn Studio.
+|Parâmetros|Descrição|exemplo|
+| --- | --- | --- |
+|Atribuir resultado a variável|Retorna uma lista com todos os arquivos no File Storage da sua conta do Saturn Studio|Variável|
+
+### Excluir um arquivo do File Storage
+  
+Exclui um arquivo do File Storage da sua conta do Saturn Studio.
+|Parâmetros|Descrição|exemplo|
+| --- | --- | --- |
+|ID do arquivo|ID do arquivo a ser excluído no File Storage da sua conta do Saturn Studio|Arquivo|
+|Atribuir resultado a variável|Nome da variável onde o resultado será armazenado|Variável|
+
+### Listar todos os robôs no Saturn Studio
+  
+Retorna uma lista com todos os robôs da sua conta do Saturn Studio.
+|Parâmetros|Descrição|exemplo|
+| --- | --- | --- |
+|Atribuir resultado a variável|Retorna uma lista com todos os robôs da sua conta do Saturn Studio|Variável|
+|Filtrar robôs ativos|Marque para listar apenas os robôs ativos|True|
+
+### Parar todos os robôs em execução
+  
+Para todos os robôs em execução na sua conta do Saturn Studio.
+|Parâmetros|Descrição|exemplo|
+| --- | --- | --- |
+|Atribuir resultado a variável|Variável onde o resultado da desativação dos robôs será armazenado|Variável|

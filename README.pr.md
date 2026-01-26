@@ -1,3 +1,7 @@
+
+
+
+
 # Saturn Studio
   
 Este módulo permite que você se conecte à sua conta Saturn Studio e gerencie seus fluxos de trabalho.  
@@ -18,7 +22,22 @@ Para instalar o módulo no Rocketbot Studio, pode ser feito de duas formas:
 Conectar com Saturn Studio usando sua API Key.
 
 2. Executar workflow  
-Executar um fluxo de trabalho na sua conta do Saturn Studio.  
+Executar um fluxo de trabalho na sua conta do Saturn Studio.
+
+3. Carregar arquivo para o File Storage  
+Carregue um arquivo para o File Storage da sua conta do Saturn Studio.
+
+4. Listar todos os arquivos no File Storage  
+Retorna uma lista com todos os arquivos no File Storage da sua conta do Saturn Studio.
+
+5. Excluir um arquivo do File Storage  
+Exclui um arquivo do File Storage da sua conta do Saturn Studio.
+
+6. Listar todos os robôs no Saturn Studio  
+Retorna uma lista com todos os robôs da sua conta do Saturn Studio.
+
+7. Parar todos os robôs em execução  
+Para todos os robôs em execução na sua conta do Saturn Studio.  
 
 
 
