@@ -126,7 +126,7 @@ try:
             SetVar(result, mod_SaturnClient.stop_all_robots())
         except Exception as e:
             SetVar(result, False)
-            raise Exception("Error listing robots in Saturn: " + str(e))
+            raise Exception("Error stopping all active robots in Saturn: " + str(e))
 
 
         
