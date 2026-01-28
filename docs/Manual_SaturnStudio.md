@@ -71,3 +71,49 @@ Stops all running robots in your Saturn Studio account.
 |Parameters|Description|example|
 | --- | --- | --- |
 |Assign result to variable|Variable where the result of whether the robots could be deactivated will be stored|Variable|
+
+### List Data Stores
+  
+This command allows you to retrieve all Data Stores from your Saturn Studio account
+|Parameters|Description|example|
+| --- | --- | --- |
+|Assign result to variable|Variable where the Data Stores of your Saturn Studio account will be stored|Variable|
+
+### Search Data Store
+  
+This command allows you to retrieve a Data Store using its ID or Name from your Saturn Studio account
+|Parameters|Description|example|
+| --- | --- | --- |
+|Type of data to search|Select whether you want to search the Data Store by its ID or Name in your Saturn Studio account|ID|
+|Data Store Name or ID|Name or ID of the Data Store to search in your Saturn Studio account|my_data_store \| ID|
+|Assign result to variable|Variable where the retrieved records information from the Data Store in your Saturn Studio account will be stored|Variable|
+
+### Create data store
+  
+This command allows you to create a Data Store in your Saturn Studio account
+|Parameters|Description|example|
+| --- | --- | --- |
+|Data Store name|Name that the Data Store created in your Saturn Studio account will have|My new Data Store|
+|Data Store description|Description that the Data Store created in your Saturn Studio account will have|Data Store description|
+|Assign result to variable|Variable where the created Data Store information in your Saturn Studio account will be stored|Variable|
+
+### Add record to Data Store
+  
+This command allows you to add a record to a Data Store in your Saturn Studio account
+|Parameters|Description|example|
+| --- | --- | --- |
+|Data Store ID|ID of the Data Store where the record will be added in your Saturn Studio account|e88d5dfd3c59f0f5fbb908d0f6aaf7ab|
+|Record to add (JSON format)|Record that will be added to the Data Store in your Saturn Studio account|{
+  "name": "John",
+  "age": 30
+}|
+|Assign result to variable|Variable where the added record information in your Saturn Studio account will be stored|Variable|
+
+### Get records from Data Store
+  
+This command allows you to get records from a Data Store in your Saturn Studio account
+|Parameters|Description|example|
+| --- | --- | --- |
+|Data Store ID|ID of the Data Store from where the records will be retrieved in your Saturn Studio account|e88d5dfd3c59f0f5fbb908d0f6aaf7ab|
+|Custom Filter|Only records containing the specified text in the filter will be retrieved. Leave this field empty to get all records.|"name": "John"|
+|Assign result to variable|Variable where the retrieved records information from the Data Store in your Saturn Studio account will be stored|Variable|

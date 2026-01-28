@@ -1,19 +1,19 @@
 {
-    "author":"Nicolas Garcia",
+    "author": "Nicolas Garcia",
     "description": "This module allows you to connect to your account of Saturn Studio and manage your workflows.",
     "description_lang": {
         "es": "Este módulo te permite conectarte a tu cuenta de Saturn Studio y gestionar tus flujos de trabajo.",
         "en": "This module allows you to connect to your Saturn Studio account and manage your workflows.",
         "pr": "Este módulo permite que você se conecte à sua conta Saturn Studio e gerencie seus fluxos de trabalho."
     },
-    "disclaimer":"THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
-    "version":"1.1.1",
+    "disclaimer": "THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
+    "version": "1.2.0",
     "license": "MIT",
-    "homepage":"http://rocketbot.com/",
+    "homepage": "http://rocketbot.com/",
     "linux": true,
-    "windows":true,
-    "mac":true,
-    "docker":true,
+    "windows": true,
+    "mac": true,
+    "docker": true,
     "name": "SaturnStudio",
     "dependencies": {},
     "title": {
@@ -28,7 +28,7 @@
                 "title": "Connect",
                 "description": "Connect your account of Saturn Studio using your API Key.",
                 "title_options": "Select Option",
-                "options":null
+                "options": null
             },
             "es": {
                 "title": "Conectar",
@@ -107,16 +107,16 @@
             "father": "module",
             "group": "scripts",
             "linux": true,
-            "windows":true,
-            "mac":true,
-            "docker":true
+            "windows": true,
+            "mac": true,
+            "docker": true
         },
         {
             "en": {
                 "title": "Execute workflow",
                 "description": "Execute a workflow from your Saturn Studio account.",
                 "title_options": "Select Option",
-                "options":null
+                "options": null
             },
             "es": {
                 "title": "Ejecutar workflow",
@@ -195,16 +195,16 @@
             "father": "module",
             "group": "scripts",
             "linux": true,
-            "windows":true,
-            "mac":true,
-            "docker":true
+            "windows": true,
+            "mac": true,
+            "docker": true
         },
         {
             "en": {
                 "title": "Upload file to File Storage",
                 "description": "Upload a file to the File Storage of your Saturn Studio account.",
                 "title_options": "Select Option",
-                "options":null
+                "options": null
             },
             "es": {
                 "title": "Subir archivo al File Storage",
@@ -278,16 +278,16 @@
             "father": "module",
             "group": "scripts",
             "linux": true,
-            "windows":true,
-            "mac":true,
-            "docker":true
+            "windows": true,
+            "mac": true,
+            "docker": true
         },
         {
             "en": {
                 "title": "List all files in File Storage",
                 "description": "Return a list of all files from the File Storage of your Saturn Studio account.",
                 "title_options": "Select Option",
-                "options":null
+                "options": null
             },
             "es": {
                 "title": "Listar todos los archivos en el File Storage",
@@ -341,16 +341,16 @@
             "father": "module",
             "group": "scripts",
             "linux": true,
-            "windows":true,
-            "mac":true,
-            "docker":true
+            "windows": true,
+            "mac": true,
+            "docker": true
         },
         {
             "en": {
                 "title": "Delete a file from File Storage",
                 "description": "Delete a file from the File Storage of your Saturn Studio account.",
                 "title_options": "Select Option",
-                "options":null
+                "options": null
             },
             "es": {
                 "title": "Eliminar un archivo del File Storage",
@@ -425,16 +425,16 @@
             "father": "module",
             "group": "scripts",
             "linux": true,
-            "windows":true,
-            "mac":true,
-            "docker":true
+            "windows": true,
+            "mac": true,
+            "docker": true
         },
         {
             "en": {
                 "title": "List all robots in Saturn Studio",
                 "description": "Return a list of all robots of your Saturn Studio account.",
                 "title_options": "Select Option",
-                "options":null
+                "options": null
             },
             "es": {
                 "title": "Listar todos los robots en Saturn Studio",
@@ -508,16 +508,16 @@
             "father": "module",
             "group": "scripts",
             "linux": true,
-            "windows":true,
-            "mac":true,
-            "docker":true
+            "windows": true,
+            "mac": true,
+            "docker": true
         },
         {
             "en": {
                 "title": "Stop all running robots",
                 "description": "Stops all running robots in your Saturn Studio account.",
                 "title_options": "Select Option",
-                "options":null
+                "options": null
             },
             "es": {
                 "title": "Detener todos los robots en ejecución",
@@ -571,11 +571,509 @@
             "father": "module",
             "group": "scripts",
             "linux": true,
-            "windows":true,
-            "mac":true,
-            "docker":true
+            "windows": true,
+            "mac": true,
+            "docker": true
+        },
+        {
+            "en": {
+                "title": "List Data Stores",
+                "description": "This command allows you to retrieve all Data Stores from your Saturn Studio account",
+                "title_options": "Select Option",
+                "options": null
+            },
+            "es": {
+                "title": "Listar Data Stores",
+                "description": "Este comando te permite obtener todos los Data Stores de tu cuenta de Saturn Studio",
+                "title_options": "Seleccione una opción",
+                "options": null
+            },
+            "pr": {
+                "title": "Listar Data Stores",
+                "description": "Este comando permite que você obtenha todos os Data Stores da sua conta Saturn Studio",
+                "title_options": "Selecione uma opção",
+                "options": null
+            },
+            "form": {
+                "css": "modal-lg",
+                "inputs": [
+                    {
+                        "type": "input",
+                        "placeholder": {
+                            "es": "Variable",
+                            "en": "Variable",
+                            "pr": "Variável"
+                        },
+                        "title": {
+                            "es": "Asignar resultado a variable:",
+                            "en": "Assign result to variable:",
+                            "pr": "Atribuir resultado a variável:"
+                        },
+                        "description": {
+                            "es": "Variable donde se almacenarán los Data Stores de tu cuenta de Saturn Studio",
+                            "en": "Variable where the Data Stores of your Saturn Studio account will be stored",
+                            "pr": "Variável onde os Data Stores da sua conta Saturn Studio serão armazenados"
+                        },
+                        "help": {
+                            "es": "Nombre de variable sin {}",
+                            "en": "Variable name without {}",
+                            "pr": "Nome da variável sem {}"
+                        },
+                        "remove_vars": true,
+                        "id": "result",
+                        "css": "col-md-6"
+                    }
+                ]
+            },
+            "video_youtube": "",
+            "icon": "data:image/png;base64,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",
+            "module": "listDataStores",
+            "module_name": "SaturnStudio",
+            "visible": true,
+            "options": false,
+            "father": "module",
+            "group": "scripts",
+            "linux": true,
+            "windows": true,
+            "mac": true,
+            "docker": true
+        },
+        {
+            "en": {
+                "title": "Search Data Store",
+                "description": "This command allows you to retrieve a Data Store using its ID or Name from your Saturn Studio account",
+                "title_options": "Select Option",
+                "options": null
+            },
+            "es": {
+                "title": "Buscar Data Store",
+                "description": "Este comando te permite obtener un Data Store usando su ID o Nombre desde tu cuenta de Saturn Studio",
+                "title_options": "Seleccione una opción",
+                "options": null
+            },
+            "pr": {
+                "title": "Buscar Data Store",
+                "description": "Este comando permite que você obtenha um Data Store usando seu ID ou Nome na sua conta Saturn Studio",
+                "title_options": "Selecione uma opção",
+                "options": null
+            },
+            "form": {
+                "css": "modal-lg",
+                "inputs": [
+                    {
+                        "type": "select",
+                        "placeholder": {
+                            "es": "ID",
+                            "en": "ID",
+                            "pr": "ID"
+                        },
+                        "title": {
+                            "es": "Tipo de dato a buscar:",
+                            "en": "Type of data to search:",
+                            "pr": "Tipo de dado a ser pesquisado:"
+                        },
+                        "description": {
+                            "es": "Selecciona si deseas buscar el Data Store por su ID o Nombre en tu cuenta de Saturn Studio",
+                            "en": "Select whether you want to search the Data Store by its ID or Name in your Saturn Studio account",
+                            "pr": "Selecione se deseja pesquisar o Data Store pelo seu ID ou Nome na sua conta Saturn Studio"
+                        },
+                        "help": {
+                            "es": "Selecciona si deseas buscar el Data Store por su ID o Nombre en tu cuenta de Saturn Studio",
+                            "en": "Select whether you want to search the Data Store by its ID or Name in your Saturn Studio account",
+                            "pr": "Selecione se deseja pesquisar o Data Store pelo seu ID ou Nome na sua conta Saturn Studio"
+                        },
+                        "options": [
+                            {
+                                "title": "ID",
+                                "value": "id"
+                            },
+                            {
+                                "title": "Nombre",
+                                "value": "name"
+                            }
+                        ],
+                        "id": "search_type",
+                        "css": "col-md-6"
+                    },
+                    {
+                        "type": "input",
+                        "placeholder": {
+                            "es": "my_data_store | ID",
+                            "en": "my_data_store | ID",
+                            "pr": "my_data_store | ID"
+                        },
+                        "title": {
+                            "es": "Nombre o ID del Data Store:",
+                            "en": "Data Store Name or ID:",
+                            "pr": "Nome ou ID do Data Store:"
+                        },
+                        "description": {
+                            "es": "Nombre o ID del Data Store a buscar en tu cuenta de Saturn Studio",
+                            "en": "Name or ID of the Data Store to search in your Saturn Studio account",
+                            "pr": "Nome ou ID do Data Store a ser pesquisado na sua conta Saturn Studio"
+                        },
+                        "help": {
+                            "es": "El valor ingresado debe coincidir por completo con el Nombre o ID del Data Store",
+                            "en": "The entered value must match exactly the Name or ID of the Data Store",
+                            "pr": "O valor inserido deve corresponder exatamente ao Nome ou ID do Data Store"
+                        },
+                        "id": "search_value",
+                        "css": "col-md-6"
+                    },
+                    {
+                        "type": "input",
+                        "placeholder": {
+                            "es": "Variable",
+                            "en": "Variable",
+                            "pr": "Variável"
+                        },
+                        "title": {
+                            "es": "Asignar resultado a variable:",
+                            "en": "Assign result to variable:",
+                            "pr": "Atribuir resultado a variável:"
+                        },
+                        "description": {
+                            "es": "Variable donde se almacenará la información de los registros obtenidos del Data Store en tu cuenta de Saturn Studio",
+                            "en": "Variable where the retrieved records information from the Data Store in your Saturn Studio account will be stored",
+                            "pr": "Variável onde as informações dos registros obtidos do Data Store na sua conta Saturn Studio serão armazenadas"
+                        },
+                        "help": {
+                            "es": "Nombre de variable sin {}",
+                            "en": "Variable name without {}",
+                            "pr": "Nome da variável sem {}"
+                        },
+                        "remove_vars": true,
+                        "id": "result",
+                        "css": "col-md-12"
+                    }
+                ]
+            },
+            "video_youtube": "",
+            "icon": "data:image/png;base64,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",
+            "module": "searchDataStore",
+            "module_name": "SaturnStudio",
+            "visible": true,
+            "options": false,
+            "father": "module",
+            "group": "scripts",
+            "linux": true,
+            "windows": true,
+            "mac": true,
+            "docker": true
+        },
+        {
+            "en": {
+                "title": "Create data store",
+                "description": "This command allows you to create a Data Store in your Saturn Studio account",
+                "title_options": "Select Option",
+                "options": null
+            },
+            "es": {
+                "title": "Crear Data Store",
+                "description": "Este comando te permite crear un Data Store en tu cuenta de Saturn Studio",
+                "title_options": "Seleccione una opción",
+                "options": null
+            },
+            "pr": {
+                "title": "Criar Data Store",
+                "description": "Este comando permite que você crie um Data Store na sua conta Saturn Studio",
+                "title_options": "Selecione uma opção",
+                "options": null
+            },
+            "form": {
+                "css": "modal-lg",
+                "inputs": [
+                    {
+                        "type": "input",
+                        "placeholder": {
+                            "es": "Mi nuevo Data Store",
+                            "en": "My new Data Store",
+                            "pr": "Meu novo Data Store"
+                        },
+                        "title": {
+                            "es": "Nombre del Data Store:",
+                            "en": "Data Store name:",
+                            "pr": "Nome do Data Store:"
+                        },
+                        "description": {
+                            "es": "Nombre que tendrá el Data Store creado en tu cuenta de Saturn Studio",
+                            "en": "Name that the Data Store created in your Saturn Studio account will have",
+                            "pr": "Nome que o Data Store criado na sua conta Saturn Studio terá"
+                        },
+                        "id": "name",
+                        "css": "col-md-12"
+                    },
+                    {
+                        "type": "textarea",
+                        "placeholder": {
+                            "es": "Descripción del Data Store",
+                            "en": "Data Store description",
+                            "pr": "Descrição do Data Store"
+                        },
+                        "title": {
+                            "es": "Descripción del Data Store:",
+                            "en": "Data Store description:",
+                            "pr": "Descrição do Data Store:"
+                        },
+                        "description": {
+                            "es": "Descripción que tendrá el Data Store creado en tu cuenta de Saturn Studio",
+                            "en": "Description that the Data Store created in your Saturn Studio account will have",
+                            "pr": "Descrição que o Data Store criado na sua conta Saturn Studio terá"
+                        },
+                        "id": "description",
+                        "css": "col-md-12"
+                    },
+                    {
+                        "type": "input",
+                        "placeholder": {
+                            "es": "Variable",
+                            "en": "Variable",
+                            "pr": "Variável"
+                        },
+                        "title": {
+                            "es": "Asignar resultado a variable:",
+                            "en": "Assign result to variable:",
+                            "pr": "Atribuir resultado a variável:"
+                        },
+                        "description": {
+                            "es": "Variable donde se almacenará la información del Data Store creado en tu cuenta de Saturn Studio",
+                            "en": "Variable where the created Data Store information in your Saturn Studio account will be stored",
+                            "pr": "Variável onde as informações do Data Store criado na sua conta Saturn Studio serão armazenadas"
+                        },
+                        "help": {
+                            "es": "Nombre de variable sin {}",
+                            "en": "Variable name without {}",
+                            "pr": "Nome da variável sem {}"
+                        },
+                        "remove_vars": true,
+                        "id": "result",
+                        "css": "col-md-12"
+                    }
+                ]
+            },
+            "video_youtube": "",
+            "icon": "data:image/png;base64,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",
+            "module": "createDataStore",
+            "module_name": "SaturnStudio",
+            "visible": true,
+            "options": false,
+            "father": "module",
+            "group": "scripts",
+            "linux": true,
+            "windows": true,
+            "mac": true,
+            "docker": true
+        },
+        {
+            "en": {
+                "title": "Add record to Data Store",
+                "description": "This command allows you to add a record to a Data Store in your Saturn Studio account",
+                "title_options": "Select Option",
+                "options": null
+            },
+            "es": {
+                "title": "Agregar registro a Data Store",
+                "description": "Este comando te permite agregar un registro a un Data Store en tu cuenta de Saturn Studio",
+                "title_options": "Seleccione una opción",
+                "options": null
+            },
+            "pr": {
+                "title": "Adicionar registro ao Data Store",
+                "description": "Este comando permite que você adicione um registro a um Data Store na sua conta Saturn Studio",
+                "title_options": "Selecione uma opção",
+                "options": null
+            },
+            "form": {
+                "css": "modal-lg",
+                "inputs": [
+                    {
+                        "type": "input",
+                        "placeholder": {
+                            "es": "e88d5dfd3c59f0f5fbb908d0f6aaf7ab",
+                            "en": "e88d5dfd3c59f0f5fbb908d0f6aaf7ab",
+                            "pr": "e88d5dfd3c59f0f5fbb908d0f6aaf7ab"
+                        },
+                        "title": {
+                            "es": "ID del Data Store:",
+                            "en": "Data Store ID:",
+                            "pr": "ID do Data Store:"
+                        },
+                        "description": {
+                            "es": "ID del Data Store donde se agregará el registro",
+                            "en": "ID of the Data Store where the record will be added in your Saturn Studio account",
+                            "pr": "ID do Data Store onde o registro será adicionado na sua conta Saturn Studio"
+                        },
+                        "id": "data_store_id",
+                        "css": "col-md-12"
+                    },
+                    {
+                        "type": "textarea",
+                        "placeholder": {
+                            "es": "{\n  \"nombre\": \"Juan\",\n  \"edad\": 30\n}",
+                            "en": "{\n  \"name\": \"John\",\n  \"age\": 30\n}",
+                            "pr": "{\n  \"nome\": \"João\",\n  \"idade\": 30\n}"
+                        },
+                        "title": {
+                            "es": "Registro a agregar (formato JSON):",
+                            "en": "Record to add (JSON format):",
+                            "pr": "Registro para adicionar (formato JSON):"
+                        },
+                        "description": {
+                            "es": "Registro que se agregará al Data Store en tu cuenta de Saturn Studio",
+                            "en": "Record that will be added to the Data Store in your Saturn Studio account",
+                            "pr": "Registro que será adicionado ao Data Store na sua conta Saturn Studio"
+                        },
+                        "id": "record",
+                        "css": "col-md-12"
+                    },
+                    {
+                        "type": "input",
+                        "placeholder": {
+                            "es": "Variable",
+                            "en": "Variable",
+                            "pr": "Variável"
+                        },
+                        "title": {
+                            "es": "Asignar resultado a variable:",
+                            "en": "Assign result to variable:",
+                            "pr": "Atribuir resultado a variável:"
+                        },
+                        "description": {
+                            "es": "Variable donde se almacenará la información del registro agregado al Data Store en tu cuenta de Saturn Studio",
+                            "en": "Variable where the added record information in your Saturn Studio account will be stored",
+                            "pr": "Variável onde as informações do registro adicionado ao Data Store na sua conta Saturn Studio serão armazenadas"
+                        },
+                        "help": {
+                            "es": "Nombre de variable sin {}",
+                            "en": "Variable name without {}",
+                            "pr": "Nome da variável sem {}"
+                        },
+                        "remove_vars": true,
+                        "id": "result",
+                        "css": "col-md-12"
+                    }
+                ]
+            },
+            "video_youtube": "",
+            "icon": "data:image/png;base64,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",
+            "module": "addRecordToDataStore",
+            "module_name": "SaturnStudio",
+            "visible": true,
+            "options": false,
+            "father": "module",
+            "group": "scripts",
+            "linux": true,
+            "windows": true,
+            "mac": true,
+            "docker": true
+        },
+        {
+            "en": {
+                "title": "Get records from Data Store",
+                "description": "This command allows you to get records from a Data Store in your Saturn Studio account",
+                "title_options": "Select Option",
+                "options": null
+            },
+            "es": {
+                "title": "Obtener registros de Data Store",
+                "description": "Este comando te permite obtener registros de un Data Store en tu cuenta de Saturn Studio",
+                "title_options": "Seleccione una opción",
+                "options": null
+            },
+            "pr": {
+                "title": "Obter registros do Data Store",
+                "description": "Este comando permite que você obtenha registros de um Data Store na sua conta Saturn Studio",
+                "title_options": "Selecione uma opção",
+                "options": null
+            },
+            "form": {
+                "css": "modal-lg",
+                "inputs": [
+                    {
+                        "type": "input",
+                        "placeholder": {
+                            "es": "e88d5dfd3c59f0f5fbb908d0f6aaf7ab",
+                            "en": "e88d5dfd3c59f0f5fbb908d0f6aaf7ab",
+                            "pr": "e88d5dfd3c59f0f5fbb908d0f6aaf7ab"
+                        },
+                        "title": {
+                            "es": "ID del Data Store:",
+                            "en": "Data Store ID:",
+                            "pr": "ID do Data Store:"
+                        },
+                        "description": {
+                            "es": "ID del Data Store desde donde se obtendrán los registros",
+                            "en": "ID of the Data Store from where the records will be retrieved in your Saturn Studio account",
+                            "pr": "ID do Data Store de onde os registros serão obtidos na sua conta Saturn Studio"
+                        },
+                        "id": "data_store_id",
+                        "css": "col-md-12"
+                    },
+                    {
+                        "type": "input",
+                        "placeholder": {
+                            "es": "\"nombre\": \"Juan\"",
+                            "en": "\"name\": \"John\"",
+                            "pr": "\"nome\": \"João\""
+                        },
+                        "title": {
+                            "es": "Filtro personalizado",
+                            "en": "Custom Filter",
+                            "pr": "Filtro Personalizado"
+                        },
+                        "description": {
+                            "es": "Solo se obtendrán los registros que contengan el texto especificado en el filtro. Deja este campo vacío para obtener todos los registros.",
+                            "en": "Only records containing the specified text in the filter will be retrieved. Leave this field empty to get all records.",
+                            "pr": "Apenas os registros que contiverem o texto especificado no filtro serão obtidos. Deixe este campo vazio para obter todos os registros."
+                        },
+                        "help": {
+                            "es": "Escribe el texto que debe contener el registro",
+                            "en": "Type the text that the record must contain",
+                            "pr": "Digite o texto que o registro deve conter"
+                        },
+                        "id": "custom_filter",
+                        "css": "col-md-12"
+                    },
+                    {
+                        "type": "input",
+                        "placeholder": {
+                            "es": "Variable",
+                            "en": "Variable",
+                            "pr": "Variável"
+                        },
+                        "title": {
+                            "es": "Asignar resultado a variable:",
+                            "en": "Assign result to variable:",
+                            "pr": "Atribuir resultado a variável:"
+                        },
+                        "description": {
+                            "es": "Variable donde se almacenará la información de los registros obtenidos del Data Store en tu cuenta de Saturn Studio",
+                            "en": "Variable where the retrieved records information from the Data Store in your Saturn Studio account will be stored",
+                            "pr": "Variável onde as informações dos registros obtidos do Data Store na sua conta Saturn Studio serão armazenadas"
+                        },
+                        "help": {
+                            "es": "Nombre de variable sin {}",
+                            "en": "Variable name without {}",
+                            "pr": "Nome da variável sem {}"
+                        },
+                        "remove_vars": true,
+                        "id": "result",
+                        "css": "col-md-12"
+                    }
+                ]
+            },
+            "video_youtube": "",
+            "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAABaVJREFUWEftl22MVNUZx3/PuTP33tkF9QOwsAuEpMWQ1qrxJZgmbQApwWVgBbpoIG1gQcU31GrSaMKLGz9pLa1oUmmLKDYkXS3idq0v/YBKNBoUCQroF9aAuLoIrVph7rn3PO2d2WFndmd46RfTpDe5mZ05557n9/yft7vCt3zJt2yf/12AHkaPlWx2XILLZk1ybFRh4sdX8I49V0XPSYHtjL/YM/ENoswDnVhpTMAqskdEt6nLbZpDb1/l+vVc36yYK0FaQL/28V7cwpbPzwrgcb4/sUEKDwfYhQFWMiRVjip8IcgHoMcVRghMEZGtb7spf/yEC+Y7vEUOLhFUUoOCYuB4jvjSMwL8msvmBxI/EWDPD4jIYV8KpdAjiBMYo550t9pP3xHQMtULfDdQ+ertfxFevFcn8Q1h0Wh6CThBTelv98vTAnTyo5VZiR4LsCbEEki8dbnbv3honP/e0tIJnOdNnnzP9B07YgV5QZo+BCYnGA4y7sAxbfwt6MsBUQYxBwRExdxRF+BuZi8IKHQFYk2QGici/fTFda5w+9aWIV5qahpjPO+z9Lt63pWzDh3a1eM1Lcbxp0FQOW6Uy66hr/dxc9GfndIuUFD1vlMT4BbaJhjs3rAoe+p5CjB4+xKvWu4ObCgbeKW5+TYxZvSxw4c7R9B8NZI8m+ZCtVLy2gn1n07EbCzFQh64zh1cXRNgKT992scuSY0WpU+9l7g/lOiZnLHbGuN/vN7IOFnEmyfKRhRMj2m6V5R1QKZ2OYqm4QF2jtWWGWnZDgNYwJLxPsnBEJsZANiZI34k4ILt99MV/Yqp3/MleiQrdufN7v3UGN00NxhJtgGzztwHZL9T8+O5HDk6kJTVj8xj2W0Z4g0B9tWAePVmnnk93bGWaWGCrgklujvA+gHJX1bp7oXpWpeZtD6r9s4s8Rnsyz5P45mzOfppeeMwBfJ0rIN4z195KvWoeN1K21SfwmYfO2UwJ+K/jVTXJubE7aFGD6WVkq5lh/SICqI3nHptZc/rAlS60E67F+DdF1BY42MzpXwYuCXuD4g0wI4ZzJXS2tBGhciWBhfeOJ3ek0MlqluGc7lxlFDYGhDPrKyAUxDFyiiVZvmuBPRwaaoXRLin1fU9Wi82NQHmsPwicN3ApPSgoR6Wv/sD5VmlzKnKsfs9lSWtHNldNt5D01T1ZEo+6XvyNDmwYpringM9v7wpMwAxHCQtz2EKJDmJ1nvOrlnE4WKZFienMZ1OWW5E7m11fQ/WBJhLxyxFn1PIDZUsTa5aUlc2qhx2l6/25pW8vyt9/llaxvsmucuo3gQ0pr+pkXw+6esZBjCHZT8EeQW0oVa80lhVQqTxr5D+aGgKqy90E37/Af0yLtM/M+fiDl+jawNs1icuDyPrazT6Jxz/ZxVAnp+3gPeuwhiBE1qabMNAShBxpeFCiH00Q/KHkMIPcsbODtXm/WJlVAEWnzPwfKt+1lbpYDEJ83R0K5ovjVhZqLhpCnfUU8IfyPyQZG9ANDIgmlSZmHWSEqPJtHn0vVoFMIcVl0NSjJlBftPNpruuYdlog+wDHVULwqCkstaqjlJOlMqzGiTedp32LhjWB/Is/YUiD5cWZJVCo6AzQKaD1hkqKazW7QE1JugnjXry8sUcLI7tKgVaWfozQZ6q1yjSxC29yAy/Sj2ipETV5Kwa4fGxBnUzVrJ7T82QtrPW/4ZDm0EXAR4Q/SctdoH0CK7LwVWC/K5WUqYHphD1Yh6I/Sirdv59vLWvnoOnPGvnlhEFTp43lkz/RjZWvV63csOFhmSDojXHbblRhYOt+WQO+1gDdt397Pj6NOqe2z8mc1lxlcN1CDpbYULlwVmSOMS+F1DY7hFv2sTzR05nuGYnPJsHynvSYZUQjQcJBO/LBkb2drH+1BvS2Z51xtfysz3ov933f4B/A0oKcVpbk1kNAAAAAElFTkSuQmCC",
+            "module": "getRecordsFromDataStore",
+            "module_name": "SaturnStudio",
+            "visible": true,
+            "options": false,
+            "father": "module",
+            "group": "scripts",
+            "linux": true,
+            "windows": true,
+            "mac": true,
+            "docker": true
         }
     ]
 }
-
-

@@ -37,7 +37,22 @@ Elimina un archivo del File Storage de tu cuenta de Saturn Studio.
 Retorna una lista con todos los robots de tu cuenta de Saturn Studio.
 
 7. Detener todos los robots en ejecución  
-Detiene todos los robots en ejecución en tu cuenta de Saturn Studio.  
+Detiene todos los robots en ejecución en tu cuenta de Saturn Studio.
+
+8. Listar Data Stores  
+Este comando te permite obtener todos los Data Stores de tu cuenta de Saturn Studio
+
+9. Buscar Data Store  
+Este comando te permite obtener un Data Store usando su ID o Nombre desde tu cuenta de Saturn Studio
+
+10. Crear Data Store  
+Este comando te permite crear un Data Store en tu cuenta de Saturn Studio
+
+11. Agregar registro a Data Store  
+Este comando te permite agregar un registro a un Data Store en tu cuenta de Saturn Studio
+
+12. Obtener registros de Data Store  
+Este comando te permite obtener registros de un Data Store en tu cuenta de Saturn Studio  
 
 
 
