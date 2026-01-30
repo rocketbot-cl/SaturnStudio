@@ -104,7 +104,7 @@ class SaturnClient:
         
         data = {
             "name": name,
-            "description": description
+            "description": description if description is not None else ""
         }
 
         response =  self.__request__(method="POST", url_end="/dataStorage/create", exception_message="Failed to create DataStore in Saturn", data=data)

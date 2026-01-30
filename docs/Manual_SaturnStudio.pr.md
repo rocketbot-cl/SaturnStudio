@@ -94,7 +94,7 @@ Este comando permite que você crie um Data Store na sua conta Saturn Studio
 |Parâmetros|Descrição|exemplo|
 | --- | --- | --- |
 |Nome do Data Store|Nome que o Data Store criado na sua conta Saturn Studio terá|Meu novo Data Store|
-|Descrição do Data Store|Descrição que o Data Store criado na sua conta Saturn Studio terá|Descrição do Data Store|
+|Descrição do Data Store (opcional)|Descrição que o Data Store criado na sua conta Saturn Studio terá|Descrição do Data Store (opcional)|
 |Atribuir resultado a variável|Variável onde as informações do Data Store criado na sua conta Saturn Studio serão armazenadas|Variável|
 
 ### Adicionar registro ao Data Store

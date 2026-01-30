@@ -141,6 +141,9 @@ try:
         name = GetParams("name")
         description = GetParams("description")
         result = GetParams("result")
+        
+        if not name:
+            raise Exception("DataStore name cannot be empty")
 
         try:
             SetVar(result, mod_SaturnClient.createDataStore(name, description))
