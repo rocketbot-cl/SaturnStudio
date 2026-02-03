@@ -93,6 +93,80 @@ class SaturnClient:
         
         return True
     
+    def listDataStores(self):        
+        
+        response =  self.__request__(method="GET", url_end="/dataStorage/list", exception_message="Failed to get DataStores in Saturn")
+        response_data = response.json().get("data", {})
+        datastore_list = response_data.get("data", [])
+        return datastore_list
+    
+    def createDataStore(self, name: str, description: str):        
+        
+        data = {
+            "name": name,
+            "description": description if description is not None else ""
+        }
+
+        response =  self.__request__(method="POST", url_end="/dataStorage/create", exception_message="Failed to create DataStore in Saturn", data=data)
+        
+        if not response.json().get("success", False):
+            raise Exception(response.json().get("message", "Unknown error"))
+        
+        response_data = response.json().get("data", {})
+
+        return response_data
+    
+    def addRecordToDataStore(self, datastore_id: str, record: str):
+
+        try:
+            record = eval(record)
+            if not isinstance(record, dict) and not isinstance(record, list):
+                raise Exception("Record must be a dictionary/list/json object")
+        except:
+            raise Exception("Record must be a dictionary/list/json object")
+        
+        response =  self.__request__(method="POST", url_end=f"/dataStorage/add?dataStoreId={datastore_id}", exception_message="Failed to add record to DataStore in Saturn", data=record)
+        response_data = response.json().get("data", {})
+        
+        return response_data
+    
+    def getRecordsFromDataStore(self, datastore_id: str, custom_filter: str):
+        try:
+            
+            data = {
+                "dataStoreId": datastore_id,
+                "filter": custom_filter
+            }
+            
+            response =  self.__request__(method="POST", url_end=f"/dataStorage/search", exception_message="Failed to get records from DataStore in Saturn", data=data)
+            response_data = response.json().get("data", {})
+            
+            return response_data
+        
+        except Exception as e:
+            raise Exception("Error getting records from DataStore in Saturn: " + str(e))
+    
+    def searchDataStore(self, search_type: str, search_value: str):
+        try:
+            url_end = f"/dataStorage/get"
+            
+            if search_type == "id":
+                url_end += f"?id={search_value}"
+            elif search_type == "name":
+                url_end += f"?name={search_value}"
+            else:
+                raise Exception("Invalid search type. Must be 'id' or 'name'")
+            
+            
+            response =  self.__request__(method="GET", url_end=url_end, exception_message="Failed to search DataStore in Saturn")
+            response_data = response.json().get("data", {})
+            
+            return response_data
+        
+        except Exception as e:
+            raise Exception("Error searching DataStore in Saturn: " + str(e))
+        
+        
 
     def __request__(self, method, url_end, exception_message, data=None, files=None):
         headers = {
@@ -105,8 +179,6 @@ class SaturnClient:
         elif method == "POST":
             response = requests.post(f"{self.base_url}{url_end}", headers=headers, data=data, files=files)
 
-        #print(response.status_code)
-        #print(response.text)
         if response.status_code != 200:
             raise Exception(f"{exception_message}: " + response.text)
         

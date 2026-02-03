@@ -128,6 +128,61 @@ try:
             SetVar(result, False)
             raise Exception("Error stopping all active robots in Saturn: " + str(e))
 
+    if module == "listDataStores":
+        result = GetParams("result")
+
+        try:
+            SetVar(result, mod_SaturnClient.listDataStores())
+        except Exception as e:
+            SetVar(result, False)
+            raise Exception("Error getting DataStore from Saturn: " + str(e))
+          
+    if module == "createDataStore":
+        name = GetParams("name")
+        description = GetParams("description")
+        result = GetParams("result")
+        
+        if not name:
+            raise Exception("DataStore name cannot be empty")
+
+        try:
+            SetVar(result, mod_SaturnClient.createDataStore(name, description))
+        except Exception as e:
+            SetVar(result, False)
+            raise Exception("Error creating DataStore in Saturn: " + str(e))
+        
+    if module == "addRecordToDataStore":
+        data_store_id = GetParams("data_store_id")
+        record = GetParams("record")
+        result = GetParams("result")
+
+        try:
+            SetVar(result, mod_SaturnClient.addRecordToDataStore(data_store_id, record))
+        except Exception as e:
+            SetVar(result, False)
+            raise Exception("Error adding record to DataStore in Saturn: " + str(e))
+        
+    if module == "getRecordsFromDataStore":
+        data_store_id = GetParams("data_store_id")
+        custom_filter = GetParams("custom_filter")
+        result = GetParams("result")
+
+        try:
+            SetVar(result, mod_SaturnClient.getRecordsFromDataStore(data_store_id, custom_filter))
+        except Exception as e:
+            SetVar(result, False)
+            raise Exception("Error getting records from DataStore in Saturn: " + str(e))
+          
+    if module == "searchDataStore":
+        search_type = GetParams("search_type")
+        search_value = GetParams("search_value")
+        result = GetParams("result")
+        
+        try:
+            SetVar(result, mod_SaturnClient.searchDataStore(search_type, search_value))
+        except Exception as e:
+            SetVar(result, False)
+            raise Exception("Error searching DataStore in Saturn: " + str(e))
 
         
 except Exception as e:

@@ -37,7 +37,22 @@ Exclui um arquivo do File Storage da sua conta do Saturn Studio.
 Retorna uma lista com todos os robôs da sua conta do Saturn Studio.
 
 7. Parar todos os robôs em execução  
-Para todos os robôs em execução na sua conta do Saturn Studio.  
+Para todos os robôs em execução na sua conta do Saturn Studio.
+
+8. Listar Data Stores  
+Este comando permite que você obtenha todos os Data Stores da sua conta Saturn Studio
+
+9. Buscar Data Store  
+Este comando permite que você obtenha um Data Store usando seu ID ou Nome na sua conta Saturn Studio
+
+10. Criar Data Store  
+Este comando permite que você crie um Data Store na sua conta Saturn Studio
+
+11. Adicionar registro ao Data Store  
+Este comando permite que você adicione um registro a um Data Store na sua conta Saturn Studio
+
+12. Obter registros do Data Store  
+Este comando permite que você obtenha registros de um Data Store na sua conta Saturn Studio  
 
 
 

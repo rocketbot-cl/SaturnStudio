@@ -37,7 +37,22 @@ Delete a file from the File Storage of your Saturn Studio account.
 Return a list of all robots of your Saturn Studio account.
 
 7. Stop all running robots  
-Stops all running robots in your Saturn Studio account.  
+Stops all running robots in your Saturn Studio account.
+
+8. List Data Stores  
+This command allows you to retrieve all Data Stores from your Saturn Studio account
+
+9. Search Data Store  
+This command allows you to retrieve a Data Store using its ID or Name from your Saturn Studio account
+
+10. Create data store  
+This command allows you to create a Data Store in your Saturn Studio account
+
+11. Add record to Data Store  
+This command allows you to add a record to a Data Store in your Saturn Studio account
+
+12. Get records from Data Store  
+This command allows you to get records from a Data Store in your Saturn Studio account  
 
 
 

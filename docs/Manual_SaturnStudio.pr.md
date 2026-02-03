@@ -71,3 +71,49 @@ Para todos os robôs em execução na sua conta do Saturn Studio.
 |Parâmetros|Descrição|exemplo|
 | --- | --- | --- |
 |Atribuir resultado a variável|Variável onde o resultado da desativação dos robôs será armazenado|Variável|
+
+### Listar Data Stores
+  
+Este comando permite que você obtenha todos os Data Stores da sua conta Saturn Studio
+|Parâmetros|Descrição|exemplo|
+| --- | --- | --- |
+|Atribuir resultado a variável|Variável onde os Data Stores da sua conta Saturn Studio serão armazenados|Variável|
+
+### Buscar Data Store
+  
+Este comando permite que você obtenha um Data Store usando seu ID ou Nome na sua conta Saturn Studio
+|Parâmetros|Descrição|exemplo|
+| --- | --- | --- |
+|Tipo de dado a ser pesquisado|Selecione se deseja pesquisar o Data Store pelo seu ID ou Nome na sua conta Saturn Studio|ID|
+|Nome ou ID do Data Store|Nome ou ID do Data Store a ser pesquisado na sua conta Saturn Studio|my_data_store \| ID|
+|Atribuir resultado a variável|Variável onde as informações dos registros obtidos do Data Store na sua conta Saturn Studio serão armazenadas|Variável|
+
+### Criar Data Store
+  
+Este comando permite que você crie um Data Store na sua conta Saturn Studio
+|Parâmetros|Descrição|exemplo|
+| --- | --- | --- |
+|Nome do Data Store|Nome que o Data Store criado na sua conta Saturn Studio terá|Meu novo Data Store|
+|Descrição do Data Store (opcional)|Descrição que o Data Store criado na sua conta Saturn Studio terá|Descrição do Data Store (opcional)|
+|Atribuir resultado a variável|Variável onde as informações do Data Store criado na sua conta Saturn Studio serão armazenadas|Variável|
+
+### Adicionar registro ao Data Store
+  
+Este comando permite que você adicione um registro a um Data Store na sua conta Saturn Studio
+|Parâmetros|Descrição|exemplo|
+| --- | --- | --- |
+|ID do Data Store|ID do Data Store onde o registro será adicionado na sua conta Saturn Studio|e88d5dfd3c59f0f5fbb908d0f6aaf7ab|
+|Registro para adicionar (formato JSON)|Registro que será adicionado ao Data Store na sua conta Saturn Studio|{
+  "nome": "João",
+  "idade": 30
+}|
+|Atribuir resultado a variável|Variável onde as informações do registro adicionado ao Data Store na sua conta Saturn Studio serão armazenadas|Variável|
+
+### Obter registros do Data Store
+  
+Este comando permite que você obtenha registros de um Data Store na sua conta Saturn Studio
+|Parâmetros|Descrição|exemplo|
+| --- | --- | --- |
+|ID do Data Store|ID do Data Store de onde os registros serão obtidos na sua conta Saturn Studio|e88d5dfd3c59f0f5fbb908d0f6aaf7ab|
+|Filtro Personalizado|Apenas os registros que contiverem o texto especificado no filtro serão obtidos. Deixe este campo vazio para obter todos os registros.|"nome": "João"|
+|Atribuir resultado a variável|Variável onde as informações dos registros obtidos do Data Store na sua conta Saturn Studio serão armazenadas|Variável|
