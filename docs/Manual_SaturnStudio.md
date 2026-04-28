@@ -85,7 +85,7 @@ This command allows you to retrieve a Data Store using its ID or Name from your 
 |Parameters|Description|example|
 | --- | --- | --- |
 |Type of data to search|Select whether you want to search the Data Store by its ID or Name in your Saturn Studio account|ID|
-|Data Store Name or ID|Name or ID of the Data Store to search in your Saturn Studio account|my_data_store \| ID|
+|Data Store Name or ID|Name or ID of the Data Store to search in your Saturn Studio account|my_data_store | ID|
 |Assign result to variable|Variable where the retrieved records information from the Data Store in your Saturn Studio account will be stored|Variable|
 
 ### Create data store
@@ -117,3 +117,19 @@ This command allows you to get records from a Data Store in your Saturn Studio a
 |Data Store ID|ID of the Data Store from where the records will be retrieved in your Saturn Studio account|e88d5dfd3c59f0f5fbb908d0f6aaf7ab|
 |Custom Filter|Only records containing the specified text in the filter will be retrieved. Leave this field empty to get all records.|"name": "John"|
 |Assign result to variable|Variable where the retrieved records information from the Data Store in your Saturn Studio account will be stored|Variable|
+
+### List shared robots
+  
+Return a list of robots shared with you in Saturn Studio.
+|Parameters|Description|example|
+| --- | --- | --- |
+|Assign result to variable|Variable where the shared robots list will be stored|Variable|
+
+### Execute shared robot
+  
+Execute a shared robot by project ID and robot ID.
+|Parameters|Description|example|
+| --- | --- | --- |
+|Project ID|Project ID that owns the shared robot|team_id|
+|Robot ID|Shared robot ID to execute|robot_id|
+|Assign result to variable|Variable where the execution result will be stored|Variable|

@@ -52,7 +52,13 @@ Este comando permite que você crie um Data Store na sua conta Saturn Studio
 Este comando permite que você adicione um registro a um Data Store na sua conta Saturn Studio
 
 12. Obter registros do Data Store  
-Este comando permite que você obtenha registros de um Data Store na sua conta Saturn Studio  
+Este comando permite que você obtenha registros de um Data Store na sua conta Saturn Studio
+
+13. Listar robôs compartilhados  
+Retorna uma lista com os robôs compartilhados com você no Saturn Studio.
+
+14. Executar robô compartilhado  
+Execute um robô compartilhado informando Project ID e Robot ID.  
 
 
 
@@ -69,5 +75,5 @@ Este comando permite que você obtenha registros de um Data Store na sua conta S
 
 ### License
   
-![MIT](https://img.shields.io/github/license/instaloader/instaloader.svg)  
-[MIT](https://opensource.org/license/mit)
+![MIT](https://camo.githubusercontent.com/107590fac8cbd65071396bb4d04040f76cde5bde/687474703a2f2f696d672e736869656c64732e696f2f3a6c6963656e73652d6d69742d626c75652e7376673f7374796c653d666c61742d737175617265)  
+[MIT](http://opensource.org/licenses/mit-license.ph)
