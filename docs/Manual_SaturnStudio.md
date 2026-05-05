@@ -130,6 +130,6 @@ Return a list of robots shared with you in Saturn Studio.
 Execute a shared robot by project ID and robot ID.
 |Parameters|Description|example|
 | --- | --- | --- |
-|Project ID|Project ID that owns the shared robot|team_id|
+|Team ID|Team ID that owns the shared robot|team_id|
 |Robot ID|Shared robot ID to execute|robot_id|
 |Assign result to variable|Variable where the execution result will be stored|Variable|

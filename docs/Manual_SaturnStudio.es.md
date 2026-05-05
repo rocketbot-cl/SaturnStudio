@@ -130,6 +130,6 @@ Retorna una lista con los robots compartidos contigo en Saturn Studio.
 Ejecuta un robot compartido indicando su Project ID y Robot ID.
 |Parámetros|Descripción|ejemplo|
 | --- | --- | --- |
-|Project ID|ID del proyecto que comparte el robot|team_id|
+|Team ID|ID del equipo que comparte el robot|team_id|
 |Robot ID|ID del robot compartido a ejecutar|robot_id|
 |Asignar resultado a variable|Variable donde se almacenará el resultado de la ejecución|Variable|

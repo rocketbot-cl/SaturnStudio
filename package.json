@@ -1168,14 +1168,14 @@
                             "pr": "team_id"
                         },
                         "title": {
-                            "es": "Project ID:",
-                            "en": "Project ID:",
-                            "pr": "Project ID:"
+                            "es": "Team ID:",
+                            "en": "Team ID:",
+                            "pr": "Team ID:"
                         },
                         "description": {
-                            "es": "ID del proyecto que comparte el robot",
-                            "en": "Project ID that owns the shared robot",
-                            "pr": "ID do projeto que possui o robô compartilhado"
+                            "es": "ID del equipo que comparte el robot",
+                            "en": "Team ID that owns the shared robot",
+                            "pr": "ID do time que possui o robô compartilhado"
                         },
                         "remove_vars": false,
                         "id": "project_id",
