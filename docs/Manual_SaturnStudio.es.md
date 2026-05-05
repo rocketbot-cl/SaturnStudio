@@ -85,7 +85,7 @@ Este comando te permite obtener un Data Store usando su ID o Nombre desde tu cue
 |Parámetros|Descripción|ejemplo|
 | --- | --- | --- |
 |Tipo de dato a buscar|Selecciona si deseas buscar el Data Store por su ID o Nombre en tu cuenta de Saturn Studio|ID|
-|Nombre o ID del Data Store|Nombre o ID del Data Store a buscar en tu cuenta de Saturn Studio|my_data_store \| ID|
+|Nombre o ID del Data Store|Nombre o ID del Data Store a buscar en tu cuenta de Saturn Studio|my_data_store | ID|
 |Asignar resultado a variable|Variable donde se almacenará la información de los registros obtenidos del Data Store en tu cuenta de Saturn Studio|Variable|
 
 ### Crear Data Store
@@ -117,3 +117,19 @@ Este comando te permite obtener registros de un Data Store en tu cuenta de Satur
 |ID del Data Store|ID del Data Store desde donde se obtendrán los registros|e88d5dfd3c59f0f5fbb908d0f6aaf7ab|
 |Filtro personalizado|Solo se obtendrán los registros que contengan el texto especificado en el filtro. Deja este campo vacío para obtener todos los registros.|"nombre": "Juan"|
 |Asignar resultado a variable|Variable donde se almacenará la información de los registros obtenidos del Data Store en tu cuenta de Saturn Studio|Variable|
+
+### Listar robots compartidos
+  
+Retorna una lista con los robots compartidos contigo en Saturn Studio.
+|Parámetros|Descripción|ejemplo|
+| --- | --- | --- |
+|Asignar resultado a variable|Variable donde se almacenará el listado de robots compartidos|Variable|
+
+### Ejecutar robot compartido
+  
+Ejecuta un robot compartido indicando su Project ID y Robot ID.
+|Parámetros|Descripción|ejemplo|
+| --- | --- | --- |
+|Team ID|ID del equipo que comparte el robot|team_id|
+|Robot ID|ID del robot compartido a ejecutar|robot_id|
+|Asignar resultado a variable|Variable donde se almacenará el resultado de la ejecución|Variable|

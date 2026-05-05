@@ -92,6 +92,31 @@ class SaturnClient:
             
         
         return True
+
+    def list_shared_robots(self):
+
+        response = self.__request__(
+            method="GET",
+            url_end="/robot/shared/list",
+            exception_message="Failed to list shared robots in Saturn",
+        )
+
+        return response.json().get("data", response.json())
+
+    def execute_shared_robot(self, project_id: str, robot_id: str):
+
+        if not project_id:
+            raise Exception("project_id cannot be empty")
+        if not robot_id:
+            raise Exception("robot_id cannot be empty")
+
+        response = self.__request__(
+            method="POST",
+            url_end=f"/execute/share@{project_id}/{robot_id}",
+            exception_message="Failed to execute shared robot in Saturn",
+        )
+
+        return response.json()
     
     def listDataStores(self):        
         

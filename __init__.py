@@ -128,6 +128,26 @@ try:
             SetVar(result, False)
             raise Exception("Error stopping all active robots in Saturn: " + str(e))
 
+    if module == "list_shared_robots":
+        result = GetParams("result")
+
+        try:
+            SetVar(result, mod_SaturnClient.list_shared_robots())
+        except Exception as e:
+            SetVar(result, False)
+            raise Exception("Error listing shared robots in Saturn: " + str(e))
+
+    if module == "execute_shared_robot":
+        project_id = GetParams("project_id")
+        robot_id = GetParams("robot_id")
+        result = GetParams("result")
+
+        try:
+            SetVar(result, mod_SaturnClient.execute_shared_robot(project_id, robot_id))
+        except Exception as e:
+            SetVar(result, False)
+            raise Exception("Error executing shared robot in Saturn: " + str(e))
+
     if module == "listDataStores":
         result = GetParams("result")
 
