@@ -3,23 +3,23 @@
 
 
 # Saturn Studio
-  
-Este módulo permite que você se conecte à sua conta Saturn Studio e gerencie seus fluxos de trabalho.  
+
+Este módulo permite que você se conecte à sua conta Saturn Studio e gerencie seus fluxos de trabalho.
 
 *Read this in other languages: [English](Manual_SaturnStudio.md), [Português](Manual_SaturnStudio.pr.md), [Español](Manual_SaturnStudio.es.md)*
-  
+
 ![banner](imgs/Banner_SaturnStudio.jpg)
 ## Como instalar este módulo
-  
+
 Para instalar o módulo no Rocketbot Studio, pode ser feito de duas formas:
 1. Manual: __Baixe__ o arquivo .zip e descompacte-o na pasta módulos. O nome da pasta deve ser o mesmo do módulo e dentro dela devem ter os seguintes arquivos e pastas: \__init__.py, package.json, docs, example e libs. Se você tiver o aplicativo aberto, atualize seu navegador para poder usar o novo módulo.
-2. Automático: Ao entrar no Rocketbot Studio na margem direita você encontrará a seção **Addons**, selecione **Install Mods**, procure o módulo desejado e aperte instalar.  
+2. Automático: Ao entrar no Rocketbot Studio na margem direita você encontrará a seção **Addons**, selecione **Install Mods**, procure o módulo desejado e aperte instalar.
 
 
 ## Descrição do comando
 
 ### Conectar
-  
+
 Conectar com Saturn Studio usando sua API Key.
 |Parâmetros|Descrição|exemplo|
 | --- | --- | --- |
@@ -27,7 +27,7 @@ Conectar com Saturn Studio usando sua API Key.
 |Atribuir resultado a variável|Variável onde o resultado da conexão será armazenado|Variável|
 
 ### Executar workflow
-  
+
 Executar um fluxo de trabalho na sua conta do Saturn Studio.
 |Parâmetros|Descrição|exemplo|
 | --- | --- | --- |
@@ -35,7 +35,7 @@ Executar um fluxo de trabalho na sua conta do Saturn Studio.
 |Atribuir resultado a variável|Variável onde o resultado da conexão será armazenado|Variável|
 
 ### Carregar arquivo para o File Storage
-  
+
 Carregue um arquivo para o File Storage da sua conta do Saturn Studio.
 |Parâmetros|Descrição|exemplo|
 | --- | --- | --- |
@@ -43,14 +43,14 @@ Carregue um arquivo para o File Storage da sua conta do Saturn Studio.
 |Atribuir resultado a variável|Nome da variável onde o resultado será armazenado|Variável|
 
 ### Listar todos os arquivos no File Storage
-  
+
 Retorna uma lista com todos os arquivos no File Storage da sua conta do Saturn Studio.
 |Parâmetros|Descrição|exemplo|
 | --- | --- | --- |
 |Atribuir resultado a variável|Retorna uma lista com todos os arquivos no File Storage da sua conta do Saturn Studio|Variável|
 
 ### Excluir um arquivo do File Storage
-  
+
 Exclui um arquivo do File Storage da sua conta do Saturn Studio.
 |Parâmetros|Descrição|exemplo|
 | --- | --- | --- |
@@ -58,7 +58,7 @@ Exclui um arquivo do File Storage da sua conta do Saturn Studio.
 |Atribuir resultado a variável|Nome da variável onde o resultado será armazenado|Variável|
 
 ### Listar todos os robôs no Saturn Studio
-  
+
 Retorna uma lista com todos os robôs da sua conta do Saturn Studio.
 |Parâmetros|Descrição|exemplo|
 | --- | --- | --- |
@@ -66,30 +66,30 @@ Retorna uma lista com todos os robôs da sua conta do Saturn Studio.
 |Filtrar robôs ativos|Marque para listar apenas os robôs ativos|True|
 
 ### Parar todos os robôs em execução
-  
+
 Para todos os robôs em execução na sua conta do Saturn Studio.
 |Parâmetros|Descrição|exemplo|
 | --- | --- | --- |
 |Atribuir resultado a variável|Variável onde o resultado da desativação dos robôs será armazenado|Variável|
 
 ### Listar Data Stores
-  
+
 Este comando permite que você obtenha todos os Data Stores da sua conta Saturn Studio
 |Parâmetros|Descrição|exemplo|
 | --- | --- | --- |
 |Atribuir resultado a variável|Variável onde os Data Stores da sua conta Saturn Studio serão armazenados|Variável|
 
 ### Buscar Data Store
-  
+
 Este comando permite que você obtenha um Data Store usando seu ID ou Nome na sua conta Saturn Studio
 |Parâmetros|Descrição|exemplo|
 | --- | --- | --- |
 |Tipo de dado a ser pesquisado|Selecione se deseja pesquisar o Data Store pelo seu ID ou Nome na sua conta Saturn Studio|ID|
-|Nome ou ID do Data Store|Nome ou ID do Data Store a ser pesquisado na sua conta Saturn Studio|my_data_store | ID|
+|Nome ou ID do Data Store|Nome ou ID do Data Store a ser pesquisado na sua conta Saturn Studio|my_data_store \| ID|
 |Atribuir resultado a variável|Variável onde as informações dos registros obtidos do Data Store na sua conta Saturn Studio serão armazenadas|Variável|
 
 ### Criar Data Store
-  
+
 Este comando permite que você crie um Data Store na sua conta Saturn Studio
 |Parâmetros|Descrição|exemplo|
 | --- | --- | --- |
@@ -98,7 +98,7 @@ Este comando permite que você crie um Data Store na sua conta Saturn Studio
 |Atribuir resultado a variável|Variável onde as informações do Data Store criado na sua conta Saturn Studio serão armazenadas|Variável|
 
 ### Adicionar registro ao Data Store
-  
+
 Este comando permite que você adicione um registro a um Data Store na sua conta Saturn Studio
 |Parâmetros|Descrição|exemplo|
 | --- | --- | --- |
@@ -110,7 +110,7 @@ Este comando permite que você adicione um registro a um Data Store na sua conta
 |Atribuir resultado a variável|Variável onde as informações do registro adicionado ao Data Store na sua conta Saturn Studio serão armazenadas|Variável|
 
 ### Obter registros do Data Store
-  
+
 Este comando permite que você obtenha registros de um Data Store na sua conta Saturn Studio
 |Parâmetros|Descrição|exemplo|
 | --- | --- | --- |
@@ -118,15 +118,28 @@ Este comando permite que você obtenha registros de um Data Store na sua conta S
 |Filtro Personalizado|Apenas os registros que contiverem o texto especificado no filtro serão obtidos. Deixe este campo vazio para obter todos os registros.|"nome": "João"|
 |Atribuir resultado a variável|Variável onde as informações dos registros obtidos do Data Store na sua conta Saturn Studio serão armazenadas|Variável|
 
+### Atualizar registro no Data Store
+
+Este comando permite que você atualize um registro em um Data Store na sua conta Saturn Studio
+|Parâmetros|Descrição|exemplo|
+| --- | --- | --- |
+|ID do Data Store|ID do Data Store onde o registro será atualizado na sua conta Saturn Studio|e88d5dfd3c59f0f5fbb908d0f6aaf7ab|
+|ID do Registro|ID do registro a ser atualizado no Data Store na sua conta Saturn Studio|bb24f3e07b147d16ba3ca9b25b181695|
+|Novos dados (formato JSON)|Novos dados que sobrescreverão o registro. O registro será atualizado com os valores fornecidos.|{
+  "nome": "João",
+  "idade": 31
+}|
+|Atribuir resultado a variável|Variável onde as informações do registro atualizado na sua conta Saturn Studio serão armazenadas|Variável|
+
 ### Listar robôs compartilhados
-  
+
 Retorna uma lista com os robôs compartilhados com você no Saturn Studio.
 |Parâmetros|Descrição|exemplo|
 | --- | --- | --- |
 |Atribuir resultado a variável|Variável onde a lista de robôs compartilhados será armazenada|Variável|
 
 ### Executar robô compartilhado
-  
+
 Execute um robô compartilhado informando Project ID e Robot ID.
 |Parâmetros|Descrição|exemplo|
 | --- | --- | --- |
