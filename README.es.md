@@ -33,31 +33,34 @@ Retorna una lista con todos los archivos en el File Storage de tu cuenta de Satu
 5. Eliminar un archivo del File Storage  
 Elimina un archivo del File Storage de tu cuenta de Saturn Studio.
 
-6. Listar todos los robots en Saturn Studio  
+6. Descargar archivo del File Storage  
+Descarga un archivo del File Storage de tu cuenta de Saturn Studio.
+
+7. Listar todos los robots en Saturn Studio  
 Retorna una lista con todos los robots de tu cuenta de Saturn Studio.
 
-7. Detener todos los robots en ejecución  
+8. Detener todos los robots en ejecución  
 Detiene todos los robots en ejecución en tu cuenta de Saturn Studio.
 
-8. Listar Data Stores  
+9. Listar Data Stores  
 Este comando te permite obtener todos los Data Stores de tu cuenta de Saturn Studio
 
-9. Buscar Data Store  
+10. Buscar Data Store  
 Este comando te permite obtener un Data Store usando su ID o Nombre desde tu cuenta de Saturn Studio
 
-10. Crear Data Store  
+11. Crear Data Store  
 Este comando te permite crear un Data Store en tu cuenta de Saturn Studio
 
-11. Agregar registro a Data Store  
+12. Agregar registro a Data Store  
 Este comando te permite agregar un registro a un Data Store en tu cuenta de Saturn Studio
 
-12. Obtener registros de Data Store  
+13. Obtener registros de Data Store  
 Este comando te permite obtener registros de un Data Store en tu cuenta de Saturn Studio
 
-13. Listar robots compartidos  
+14. Listar robots compartidos  
 Retorna una lista con los robots compartidos contigo en Saturn Studio.
 
-14. Ejecutar robot compartido  
+15. Ejecutar robot compartido  
 Ejecuta un robot compartido indicando su Project ID y Robot ID.  
 
 
@@ -75,5 +78,5 @@ Ejecuta un robot compartido indicando su Project ID y Robot ID.
 
 ### License
   
-![MIT](https://camo.githubusercontent.com/107590fac8cbd65071396bb4d04040f76cde5bde/687474703a2f2f696d672e736869656c64732e696f2f3a6c6963656e73652d6d69742d626c75652e7376673f7374796c653d666c61742d737175617265)  
-[MIT](http://opensource.org/licenses/mit-license.ph)
+![MIT](https://img.shields.io/github/license/instaloader/instaloader.svg)  
+[MIT](https://opensource.org/license/mit)

@@ -57,6 +57,16 @@ Exclui um arquivo do File Storage da sua conta do Saturn Studio.
 |ID do arquivo|ID do arquivo a ser excluído no File Storage da sua conta do Saturn Studio|Arquivo|
 |Atribuir resultado a variável|Nome da variável onde o resultado será armazenado|Variável|
 
+### Baixar arquivo do File Storage
+  
+Baixe um arquivo do File Storage da sua conta do Saturn Studio.
+|Parâmetros|Descrição|exemplo|
+| --- | --- | --- |
+|ID do arquivo|ID do arquivo a ser baixado no File Storage da sua conta do Saturn Studio|Arquivo|
+|Caminho do Arquivo|Caminho do arquivo a ser carregado|C:/Users/User/Downloads/|
+|Nome do arquivo|Nome do arquivo a ser salvo|file.jpg|
+|Atribuir resultado a variável|Nome da variável onde o resultado será armazenado|Variável|
+
 ### Listar todos os robôs no Saturn Studio
   
 Retorna uma lista com todos os robôs da sua conta do Saturn Studio.

@@ -191,7 +191,19 @@ class SaturnClient:
         except Exception as e:
             raise Exception("Error searching DataStore in Saturn: " + str(e))
         
-        
+    def download_File(self, file_id: str, file_path: str):
+        headers = {
+            "Authorization": f"Bearer {self.api_key}"
+        }
+
+        url=f"{self.base_url}/files/download/{file_id}"
+        with requests.get(url, stream=True, headers=headers) as response:
+            response.raise_for_status()
+            with open(file_path, "wb") as new_file:
+                for chunk in response.iter_content(chunk_size=8192):
+                    new_file.write(chunk)
+
+        return file_path
 
     def __request__(self, method, url_end, exception_message, data=None, files=None):
         headers = {

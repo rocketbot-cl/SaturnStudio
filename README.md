@@ -33,31 +33,34 @@ Return a list of all files from the File Storage of your Saturn Studio account.
 5. Delete a file from File Storage  
 Delete a file from the File Storage of your Saturn Studio account.
 
-6. List all robots in Saturn Studio  
+6. Download file from File Storage  
+Download a file from the File Storage of your Saturn Studio account.
+
+7. List all robots in Saturn Studio  
 Return a list of all robots of your Saturn Studio account.
 
-7. Stop all running robots  
+8. Stop all running robots  
 Stops all running robots in your Saturn Studio account.
 
-8. List Data Stores  
+9. List Data Stores  
 This command allows you to retrieve all Data Stores from your Saturn Studio account
 
-9. Search Data Store  
+10. Search Data Store  
 This command allows you to retrieve a Data Store using its ID or Name from your Saturn Studio account
 
-10. Create data store  
+11. Create data store  
 This command allows you to create a Data Store in your Saturn Studio account
 
-11. Add record to Data Store  
+12. Add record to Data Store  
 This command allows you to add a record to a Data Store in your Saturn Studio account
 
-12. Get records from Data Store  
+13. Get records from Data Store  
 This command allows you to get records from a Data Store in your Saturn Studio account
 
-13. List shared robots  
+14. List shared robots  
 Return a list of robots shared with you in Saturn Studio.
 
-14. Execute shared robot  
+15. Execute shared robot  
 Execute a shared robot by project ID and robot ID.  
 
 
@@ -75,5 +78,5 @@ Execute a shared robot by project ID and robot ID.
 
 ### License
   
-![MIT](https://camo.githubusercontent.com/107590fac8cbd65071396bb4d04040f76cde5bde/687474703a2f2f696d672e736869656c64732e696f2f3a6c6963656e73652d6d69742d626c75652e7376673f7374796c653d666c61742d737175617265)  
-[MIT](http://opensource.org/licenses/mit-license.ph)
+![MIT](https://img.shields.io/github/license/instaloader/instaloader.svg)  
+[MIT](https://opensource.org/license/mit)

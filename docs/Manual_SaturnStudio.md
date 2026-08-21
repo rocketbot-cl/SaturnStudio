@@ -57,6 +57,16 @@ Delete a file from the File Storage of your Saturn Studio account.
 |File ID|ID of the file to delete from the File Storage of your Saturn Studio account|File|
 |Assign result to variable|Name of the variable where the result will be stored|Variable|
 
+### Download file from File Storage
+  
+Download a file from the File Storage of your Saturn Studio account.
+|Parameters|Description|example|
+| --- | --- | --- |
+|File ID|ID of the file to download from the File Storage of your Saturn Studio account|File|
+|File Path|Path of the file to upload|C:/Users/User/Downloads/|
+|File name|Name of the file to save|file.jpg|
+|Assign result to variable|Name of the variable where the result will be stored|Variable|
+
 ### List all robots in Saturn Studio
   
 Return a list of all robots of your Saturn Studio account.

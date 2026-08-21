@@ -33,31 +33,34 @@ Retorna uma lista com todos os arquivos no File Storage da sua conta do Saturn S
 5. Excluir um arquivo do File Storage  
 Exclui um arquivo do File Storage da sua conta do Saturn Studio.
 
-6. Listar todos os robôs no Saturn Studio  
+6. Baixar arquivo do File Storage  
+Baixe um arquivo do File Storage da sua conta do Saturn Studio.
+
+7. Listar todos os robôs no Saturn Studio  
 Retorna uma lista com todos os robôs da sua conta do Saturn Studio.
 
-7. Parar todos os robôs em execução  
+8. Parar todos os robôs em execução  
 Para todos os robôs em execução na sua conta do Saturn Studio.
 
-8. Listar Data Stores  
+9. Listar Data Stores  
 Este comando permite que você obtenha todos os Data Stores da sua conta Saturn Studio
 
-9. Buscar Data Store  
+10. Buscar Data Store  
 Este comando permite que você obtenha um Data Store usando seu ID ou Nome na sua conta Saturn Studio
 
-10. Criar Data Store  
+11. Criar Data Store  
 Este comando permite que você crie um Data Store na sua conta Saturn Studio
 
-11. Adicionar registro ao Data Store  
+12. Adicionar registro ao Data Store  
 Este comando permite que você adicione um registro a um Data Store na sua conta Saturn Studio
 
-12. Obter registros do Data Store  
+13. Obter registros do Data Store  
 Este comando permite que você obtenha registros de um Data Store na sua conta Saturn Studio
 
-13. Listar robôs compartilhados  
+14. Listar robôs compartilhados  
 Retorna uma lista com os robôs compartilhados com você no Saturn Studio.
 
-14. Executar robô compartilhado  
+15. Executar robô compartilhado  
 Execute um robô compartilhado informando Project ID e Robot ID.  
 
 
@@ -75,5 +78,5 @@ Execute um robô compartilhado informando Project ID e Robot ID.
 
 ### License
   
-![MIT](https://camo.githubusercontent.com/107590fac8cbd65071396bb4d04040f76cde5bde/687474703a2f2f696d672e736869656c64732e696f2f3a6c6963656e73652d6d69742d626c75652e7376673f7374796c653d666c61742d737175617265)  
-[MIT](http://opensource.org/licenses/mit-license.ph)
+![MIT](https://img.shields.io/github/license/instaloader/instaloader.svg)  
+[MIT](https://opensource.org/license/mit)

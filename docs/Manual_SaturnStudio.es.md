@@ -57,6 +57,16 @@ Elimina un archivo del File Storage de tu cuenta de Saturn Studio.
 |ID del archivo|ID del archivo a eliminar en el File Storage de tu cuenta de Saturn Studio|Archivo|
 |Asignar resultado a variable|Nombre de la variable donde se almacenará el resultado|Variable|
 
+### Descargar archivo del File Storage
+  
+Descarga un archivo del File Storage de tu cuenta de Saturn Studio.
+|Parámetros|Descripción|ejemplo|
+| --- | --- | --- |
+|ID del archivo|ID del archivo a descargar desde el File Storage de tu cuenta de Saturn Studio|Archivo|
+|Path hacia el archivo|Ruta del archivo a subir|C:/Users/User/Downloads/|
+|Nombre de archivo|Nombre del archivo a guardar|file.jpg|
+|Asignar resultado a variable|Nombre de la variable donde se almacenará el resultado|Variable|
+
 ### Listar todos los robots en Saturn Studio
   
 Retorna una lista con todos los robots de tu cuenta de Saturn Studio.

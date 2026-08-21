@@ -204,6 +204,25 @@ try:
             SetVar(result, False)
             raise Exception("Error searching DataStore in Saturn: " + str(e))
 
+    if module == "download_file":
+        file_id = GetParams("file_id") or ""
+        file_name = GetParams("file_name") or ""
+        folder_path = GetParams("folder") or ""
+        result = GetParams("result")
+
+        if not file_id:
+            raise Exception("File ID field cannot be left blank")
+        
+        if not folder_path or not os.path.isdir(folder_path):
+            raise Exception("Invalid Folder path")
+
+        if not file_name:
+            raise Exception("File name field cannot be left blank")
+
+        file_path = os.path.join(folder_path, file_name)
+
+        new_file_path = mod_SaturnClient.download_File(file_id, file_path)
+        SetVar(result, new_file_path)
         
 except Exception as e:
     PrintException() # type: ignore
