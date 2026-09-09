@@ -197,7 +197,7 @@ try:
         search_type = GetParams("search_type")
         search_value = GetParams("search_value")
         result = GetParams("result")
-        
+
         try:
             SetVar(result, mod_SaturnClient.searchDataStore(search_type, search_value))
         except Exception as e:
@@ -223,7 +223,18 @@ try:
 
         new_file_path = mod_SaturnClient.download_File(file_id, file_path)
         SetVar(result, new_file_path)
-        
+    if module == "updateRecordToDataStore":
+        data_store_id = GetParams("data_store_id")
+        record_id = GetParams("record_id")
+        new_value = GetParams("new_value")
+        result = GetParams("result")
+
+        try:
+            SetVar(result, mod_SaturnClient.updateRecordInDataStore(data_store_id, record_id, new_value))
+        except Exception as e:
+            SetVar(result, False)
+            raise Exception("Error updating record in DataStore in Saturn: " + str(e))
+
 except Exception as e:
     PrintException() # type: ignore
     raise e
