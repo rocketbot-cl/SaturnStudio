@@ -33,34 +33,37 @@ Retorna una lista con todos los archivos en el File Storage de tu cuenta de Satu
 5. Eliminar un archivo del File Storage
 Elimina un archivo del File Storage de tu cuenta de Saturn Studio.
 
-6. Listar todos los robots en Saturn Studio
+6. Descargar archivo del File Storage  
+Descarga un archivo del File Storage de tu cuenta de Saturn Studio.
+
+7. Listar todos los robots en Saturn Studio
 Retorna una lista con todos los robots de tu cuenta de Saturn Studio.
 
-7. Detener todos los robots en ejecución
+8. Detener todos los robots en ejecución
 Detiene todos los robots en ejecución en tu cuenta de Saturn Studio.
 
-8. Listar Data Stores
+9. Listar Data Stores
 Este comando te permite obtener todos los Data Stores de tu cuenta de Saturn Studio
 
-9. Buscar Data Store
+10. Buscar Data Store
 Este comando te permite obtener un Data Store usando su ID o Nombre desde tu cuenta de Saturn Studio
 
-10. Crear Data Store
+11. Crear Data Store
 Este comando te permite crear un Data Store en tu cuenta de Saturn Studio
 
-11. Agregar registro a Data Store
+12. Agregar registro a Data Store
 Este comando te permite agregar un registro a un Data Store en tu cuenta de Saturn Studio
 
-12. Obtener registros de Data Store
+13. Obtener registros de Data Store
 Este comando te permite obtener registros de un Data Store en tu cuenta de Saturn Studio
 
-13. Actualizar registro en Data Store
+14. Actualizar registro en Data Store
 Este comando te permite actualizar un registro en un Data Store en tu cuenta de Saturn Studio
 
-14. Listar robots compartidos
+15. Listar robots compartidos
 Retorna una lista con los robots compartidos contigo en Saturn Studio.
 
-15. Ejecutar robot compartido
+16. Ejecutar robot compartido
 Ejecuta un robot compartido indicando su Project ID y Robot ID.
 
 

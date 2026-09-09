@@ -33,34 +33,37 @@ Return a list of all files from the File Storage of your Saturn Studio account.
 5. Delete a file from File Storage
 Delete a file from the File Storage of your Saturn Studio account.
 
-6. List all robots in Saturn Studio
+6. Download file from File Storage  
+Download a file from the File Storage of your Saturn Studio account.
+
+7. List all robots in Saturn Studio  
 Return a list of all robots of your Saturn Studio account.
 
-7. Stop all running robots
+8. Stop all running robots  
 Stops all running robots in your Saturn Studio account.
 
-8. List Data Stores
+9. List Data Stores  
 This command allows you to retrieve all Data Stores from your Saturn Studio account
 
-9. Search Data Store
+10. Search Data Store  
 This command allows you to retrieve a Data Store using its ID or Name from your Saturn Studio account
 
-10. Create data store
+11. Create data store  
 This command allows you to create a Data Store in your Saturn Studio account
 
-11. Add record to Data Store
+12. Add record to Data Store  
 This command allows you to add a record to a Data Store in your Saturn Studio account
 
-12. Get records from Data Store
+13. Get records from Data Store  
 This command allows you to get records from a Data Store in your Saturn Studio account
 
-13. Update record in Data Store
+14. Update record in Data Store
 This command allows you to update a record in a Data Store in your Saturn Studio account
 
-14. List shared robots
+15. List shared robots
 Return a list of robots shared with you in Saturn Studio.
 
-15. Execute shared robot
+16. Execute shared robot
 Execute a shared robot by project ID and robot ID.
 
 
