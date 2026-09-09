@@ -174,39 +174,61 @@ class SaturnClient:
     def searchDataStore(self, search_type: str, search_value: str):
         try:
             url_end = f"/dataStorage/get"
-            
+
             if search_type == "id":
                 url_end += f"?id={search_value}"
             elif search_type == "name":
                 url_end += f"?name={search_value}"
             else:
                 raise Exception("Invalid search type. Must be 'id' or 'name'")
-            
-            
+
+
             response =  self.__request__(method="GET", url_end=url_end, exception_message="Failed to search DataStore in Saturn")
             response_data = response.json().get("data", {})
-            
+
             return response_data
-        
+
         except Exception as e:
             raise Exception("Error searching DataStore in Saturn: " + str(e))
+
+    def updateRecordInDataStore(self, datastore_id: str, record_id: str, new_value: str):
+
+        try:
+            new_value = eval(new_value)
+            if not isinstance(new_value, dict) and not isinstance(new_value, list):
+                raise Exception("Record must be a dictionary/list/json object")
+        except:
+            raise Exception("Record must be a dictionary/list/json object")
+
+        response =  self.__request__(method="PUT", url_end=f"/dataStorage/record/{record_id}?datastoreId={datastore_id}", exception_message="Failed to update record in DataStore in Saturn", json_data=new_value)
+
+        success = response.json().get("success", False)
+
+        if not success:
+            message = response.json().get("message", "Unknown error")
+            raise Exception(message)
+
+        return success
         
         
 
-    def __request__(self, method, url_end, exception_message, data=None, files=None):
+    def __request__(self, method, url_end, exception_message, data=None, files=None, json_data=None):
         headers = {
             "Authorization": f"Bearer {self.api_key}"
         }
 
         if method == "GET":
             response = requests.get(f"{self.base_url}{url_end}", headers=headers)
-        
+
         elif method == "POST":
-            response = requests.post(f"{self.base_url}{url_end}", headers=headers, data=data, files=files)
+            response = requests.post(f"{self.base_url}{url_end}", headers=headers, data=data, files=files, json=json_data)
+
+        elif method == "PUT":
+            response = requests.put(f"{self.base_url}{url_end}", headers=headers, data=data, files=files, json=json_data)
 
         if response.status_code != 200:
             raise Exception(f"{exception_message}: " + response.text)
-        
+
         return response
 
     def __does_file_exists__(self, file_id):
@@ -251,4 +273,3 @@ class SaturnClient:
 
     def __is_running__(self, robot):
         return robot.get("running") == True
-    
